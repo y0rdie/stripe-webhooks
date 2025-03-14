@@ -1,0 +1,28 @@
+{
+  "name": "stripe-webhook-service",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "sst dev",
+    "build": "sst build",
+    "deploy": "sst deploy",
+    "remove": "sst remove",
+    "test": "vitest",
+    "test:coverage": "vitest run --coverage"
+  },
+  "dependencies": {
+    "stripe": "^14.5.0",
+    "@aws-sdk/client-dynamodb": "^3.454.0",
+    "@aws-sdk/lib-dynamodb": "^3.454.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.9.0",
+    "@types/aws-lambda": "^8.10.126",
+    "sst": "^2.36.1",
+    "aws-cdk-lib": "2.101.1",
+    "constructs": "10.2.69",
+    "typescript": "^5.2.2",
+    "vitest": "^0.34.6",
+    "@vitest/coverage-v8": "^0.34.6"
+  }
+}
